@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BOOTSSTRAP</title>
+        <link
+            rel="stylesheet"
+            href="  https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="main container-fluid">
+            <h1 class="text-center col-12">Travel reservation from</h1>
+            <form action="" onsubmit="return validate()">
+                <div class="head row col-7 mt-2 mx-auto mt-5">
+                    <h3>*denotes mandatory</h3>
+                    <label>Full Name*:</label>
+                    <input
+                        type="text"
+                        name="fname"
+                        placeholder="FirstName Last Name"
+                        id="t"
+                    />
+                    <label>Email address*:</label>
+                    <input type="text" name="email" id="email" />
+                    <label>Select Toure Package*:</label>
+                    <select name="tour" id="p">
+                        <option value="0">Select</option>
+                        <option value="1">Goa</option>
+                        <option value="2">Malaisia</option>
+                        <option value="3">kulu</option>
+                        <option value="4">Manali</option>
+                        <option value="5">Dubai</option>
+                    </select>
+                    <label>Arrival date*:</label>
+                    <input
+                        type="text"
+                        name="d"
+                        placeholder="dd/mm/yyyy"
+                        id="x"
+                    />
+                    <label>Number of persons*:</label>
+                    <input type="text" name="pdetails" id="y" />
+                    <label class="row">What would you want to avail?*:</label>
+                    <div class="col-12">
+                        <label for="boarding">Boarding</label
+                        ><input type="checkbox" name="a" id="boarding" />
+                        <label for="fooding">Fooding</label
+                        ><input type="checkbox" name="a" id="fooding" />
+                        <label for="sightseeing">Sight seeing</label
+                        ><input type="checkbox" name="a" id="sightseeing" />
+                    </div>
+                    <label>Discount Coupon code:</label>
+                    <input type="text" name="c" />
+                    <label class="row">Terms and conditions*:</label>
+                    <div class="col-12">
+                        <input type="radio" name="agree" id="agree" /><label
+                            for="agree"
+                            >I agree</label
+                        >
+                        <input type="radio" name="agree" id="disagree" /><label
+                            for="agree"
+                            >I disagree</label
+                        >
+                    </div>
+
+                    <input type="submit" class="btn btn-info" id="btn" />
+                </div>
+            </form>
+        </div>
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
